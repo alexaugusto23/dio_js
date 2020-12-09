@@ -6,9 +6,15 @@
         <script type="text/javascript" src="./js/main.js"></script>
         <title>Minha Página</title>
     </head>
-    <body>
+    <body onload="load()">
         <button type="button" onclick="clicou()">Clique Aqui!</button>
         <p id="agradecimento" onclick="redirecionar()"></p>
-    
+        <p id="mouse" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui!</p>
+        <p id="mouse" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui!</p>
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>

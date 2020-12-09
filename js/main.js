@@ -124,6 +124,30 @@ function clicou()
 
 function redirecionar()
 {
-    //window.open("https://www.google.com.br")
+    window.open("https://www.google.com.br")
     window.location = "https://www.google.com.br";
+}
+
+
+function trocar(elemento)
+{   
+    elemento.innerHTML = "Obrigado por passar o mouse";
+    document.getElementById("mouse").innerHTML = "Obrigado por passar o mouse";
+    //alert("Trocar texto");
+}
+
+function voltar(elemento)
+{
+    elemento.innerHTML = "Passe o mouse aqui!";
+    document.getElementById("mouse").innerHTML = "Passe o mouse aqui!"; 
+}
+
+function load()
+{
+    alert("Página carregada");
+}
+
+function funcaoChange(elemento)
+{
+    console.log(elemento.value);
 }
