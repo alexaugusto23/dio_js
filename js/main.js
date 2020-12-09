@@ -78,7 +78,7 @@ alert(d.getHours());
 alert(d.getMinutes());
 alert(d.getSeconds());
 
-*/
+
 
 // funções
 function soma(n1 , n2)
@@ -112,4 +112,18 @@ console.log(validaIdade(idade));
 //alert("soma: " + soma(5,10));
 //alert(setReplace("Vai Japão", "Japão", "Brasil"));
 
+*/
 
+function clicou()
+{   
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+    //document.getElementById("agradecimento");
+    //console.log(document.getElementById("agradecimento"));
+    //alert("Obrigado por clicar!!!");
+}
+
+function redirecionar()
+{
+    //window.open("https://www.google.com.br")
+    window.location = "https://www.google.com.br";
+}
