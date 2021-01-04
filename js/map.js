@@ -43,4 +43,13 @@ const pets =
     }
 ]
 
-console.log(pets)
+const forEachPetNames = []
+pets.forEach((pet) => {return forEachPetNames.push(pet.name)});
+
+const petNames = pets.map((pet) => { return pet.name});
+
+
+console.log("- ".repeat(20));
+//console.log(pets);
+//console.log(petNames);
+console.log(forEachPetNames);
