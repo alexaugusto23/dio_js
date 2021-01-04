@@ -72,5 +72,15 @@ const dogs = pets.filter((pet) =>{
     return pet.type === "dog"
 });
 
-console.log(dogs);
+const totalWeightDogs = dogs.reduce((total, pet) => {
+    return total + pet.weight
+}, 0);
 
+const totalWeightDogs2 = pets
+  .filter((pet) =>{
+    return pet.type === "dog"
+}).reduce((total, pet) => {
+    return total + pet.weight
+}, 0);
+
+console.log(totalWeightDogs2);
