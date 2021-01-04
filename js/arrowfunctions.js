@@ -1,5 +1,5 @@
 //função
-function log(value)
+function log1(value)
 {
     console.log(value);
 }
@@ -44,8 +44,32 @@ var obj =
 
 var createObj = () => ({ test: 123 });
 
+function Car(){
+    this.foo= 'bar'
+}
 
+logteste('logteste2021');
+function logteste(value){console.log(value);}
 
 log2('teste2');
 console.log(sum(5,125));
 console.log(createObj());
+console.log(new Car());
+
+var objlog = {
+    showContext: function showContext (){
+        var _that = this;
+        //this.log('teste objlog')
+        //console.log(this);
+        setTimeout(function(){
+            _that.log('after 1000ms');
+            //console.log(this);
+            //.blind(this)
+        }, 1000);
+    },
+    log: function log(value){
+        console.log(value);
+    }
+};
+
+objlog.showContext();
