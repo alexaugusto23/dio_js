@@ -49,3 +49,13 @@ var obj4 = {
     sum(a,b){return a + b;}
 };
 console.log(obj4.sum(5,5));
+
+var propName = 'test';
+var obj5 = {};
+obj5[propName] = 'prop value';
+console.log(obj5);
+
+
+var propName = 'test2';
+var obj6 = {[propName + 'concat']: 'prop value2'};
+console.log(obj6);
