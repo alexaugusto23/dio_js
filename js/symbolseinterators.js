@@ -1,11 +1,11 @@
 //symbols
-//onst uniqueId = Symbol('Hello');
-//const uniqueId2 = Symbol('Hello');
+const uniqueId = Symbol('Hello');
+const uniqueId2 = Symbol('Hello');
 
-//const obj = {[uniqueId]: 'Hello'};
+const obj = {[uniqueId]: 'Hello'};
 
-//console.log(obj);
-//console.log(uniqueid === uniqueid2);
+console.log(obj);
+console.log(uniqueid === uniqueid2);
 //Symbol.iterator
 //Symbol.split
 //Symbol.toStringTag
