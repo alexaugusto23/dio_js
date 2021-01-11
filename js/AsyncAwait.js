@@ -38,5 +38,23 @@ simpleFunc()
 
 // eventEmitter
 
+const EventEmitter = require('events');
 
+class Users extends EventEmitter {
+    userLogged(data) {
+        setTimeout(() => {
+            this.emit('User logged', data);
+        }, 2000);
+    }
+}
+
+const users = new Users();
+
+users.on('User logged', data => {
+//users.once('User logged', data => {
+    console.log(data);
+});
+
+users.userLogged({user: 'Celso Henrique' });
+users.userLogged({user: 'Vicente Rodrigues' });
     
